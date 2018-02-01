@@ -1,7 +1,7 @@
 var	url = WScript.Arguments(0),
     match = /^vscode:\/\/open\/\?url=file:\/\/(.+)&line=(\d+)$/.exec(url),
-    editor = 'code';
-
+    editor = '"C:/Program Files/Microsoft VS Code Insiders/Code - Insiders.exe"';
+	
 if (match) {
     // Add parameters
     editor += ' -g'; // Open the file at path at the line and column (add :line[:column] to path)
