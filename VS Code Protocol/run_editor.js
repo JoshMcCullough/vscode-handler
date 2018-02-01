@@ -1,6 +1,6 @@
 var	url = WScript.Arguments(0),
     match = /^vscode:\/\/open\/\?url=file:\/\/(.+)&line=(\d+)$/.exec(url),
-    editor = 'code';
+    editor = '"C:/Program Files/Microsoft VS Code/Code.exe"';
 
 if (match) {
     // Add parameters
